@@ -11,7 +11,7 @@ email = input("Email ID: ")
 contact_no = input("Contact No: ")
 website = input("Website Link: ")
 
-data = "name"
+data = "Name: " + name + "\n\nAbout: " + about + "\n\nEmail: " + email + "\n\nContact: " + contact_no + "\n\nWebsite: " + website
 qr.add_data(data)
 qr.make(fit=True)
 img=qr.make_image(fill="black",back_color="white")
